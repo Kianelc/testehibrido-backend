@@ -11,8 +11,10 @@
 
 1. Instalar o Xampp
 2. Inserir o projeto na pasta HTDOCS
-   > Windows: C:/xampp/htdocs
-   > Linux: /opt/lampp/htdocs
+
+- Windows: C:/xampp/htdocs
+- Linux: /opt/lampp/htdocs
+
 3. Executar os seguintes serviços no Xampp:
 
 - Apache
