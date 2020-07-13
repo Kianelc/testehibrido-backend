@@ -45,10 +45,9 @@
             <td><?php echo $customer['id']; ?></td>
             <td><?php echo $customer['name']; ?></td>
             <td><?php echo $customer['cpf']; ?></td>
-            <td>00 0000-0000</td>
+            <td><?php echo $customer['phone']; ?></td>
             <td><?php echo $customer['email']; ?></td>
-            <td class="actions text-right">
-                <a href="view.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
+            <td class="actions text-center">
                 <a href="edit.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
                 <a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal" data-customer="<?php echo $customer['id']; ?>">
                     <i class="fa fa-trash"></i> Excluir
@@ -64,4 +63,5 @@
     </tbody>
     </table>
 </div>
+<?php include('modal.php'); ?>
 <?php include(FOOTER_TEMPLATE); ?>
