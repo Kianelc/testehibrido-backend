@@ -20,3 +20,27 @@ function add() {
       header('location: index.php');
     }
 }
+
+// Edição de cliente
+function edit() {
+  if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    if (isset($_POST['customer'])) {
+      $customer = $_POST['customer'];
+      update('customers', $id, $customer);
+      header('location: index.php');
+    } else {
+      global $customer;
+      $customer = find('customers', $id);
+    } 
+  } else {
+    header('location: index.php');
+  }
+}
+
+// Remover cliente
+function delete($id = null) {
+  global $customer;
+  $customer = remove('customers', $id);
+  header('location: index.php');
+}
