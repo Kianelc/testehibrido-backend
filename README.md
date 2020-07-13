@@ -25,3 +25,5 @@
 6. Execute os comandos do arquivo [hibrido.sql](https://github.com/Kianelc/testehibrido-backend/blob/master/sql/hibrido.sql)
    > testehibrido-backend > sql > hibrido.sql
 7. O ambiente está pronto! (abra o sistema no link: [http://localhost/testehibrido-backend](http://localhost/testehibrido-backend))
+
+Esse sistema foi feito seguindo o tutorial da [Web Dev Academy](https://webdevacademy.com.br/tag/php/)
